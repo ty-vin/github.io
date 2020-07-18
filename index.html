@@ -1,0 +1,51 @@
+    <!--COLORPOINT GAME HTML CODE -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ColorPoint Game</title>
+    </head>
+
+    <body onload = "gamePlay()">                                   <!--call to gamePlay function in js-->
+        <div> 
+            <h1>  C O L O R P O I N T  </h1>                       <!--game name-->
+            <p><h1> </h1></p>
+            <p><h1> </h1></p>
+
+
+        </div>
+        
+        <h3>
+            <b></b><em> <strong> Instructions:</strong> </em></b>
+            <em> Use your keyboard arrow keys to match the color you see printed above the colorful box. The box will show
+            you a color, but you must correctly match the color PRINTED to get a point. Each arrow key has a color assigned to it.   
+            There are three rounds and the player must score 4 points to win the round. If you match incorrectly, the computer will 
+            take the point against you and at -4 points, the computer wins the round. For your playing enjoyment, the colors in the 
+            box and those assigned to the arrow keys change.  Good luck! </em> <b> </b>
+        </h3><b> </b>
+        <b></b>
+        <h2 id = "invite">Ready?</h2>                               <!--invite id to be manipulated by DOM-->
+        <canvas id="myCanvas" width="256" height="256"></canvas>    <!--setting canvas parameters-->
+        
+        <h2>Score:</h2>                                             <!--score id to be manipulated by DOM-->
+        <h2 id= "score">0</h2>
+
+        <div class="RoundCounters">                                 <!--Divsion for counting the rounds-->
+
+            <h2>Round:</h2>
+            <h3 id="roundNum">1</h3>                                <!--roundNum id to be manipulated by DOM-->
+
+            <h2>Player Wins:</h2>
+            <h3 id = "player">0</h3>                                <!--player id to be manipulated by DOM-->
+
+            <h2>Computer Wins:</h2>
+            <h3 id="computer">0</h3>                                <!--computer id to be manipulated by DOM-->
+
+        </div>
+
+        <script type="text/javascript" src="app.js"></script>       <!--calling the js file-->
+    </body>
+    </html>
